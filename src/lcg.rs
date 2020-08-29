@@ -41,9 +41,9 @@ pub struct LCG {
     pub lcg_type: LCGType,
 }
 
-const JAVA_MULTIPLIER: i64 = 0x5DEECE66D;
-const JAVA_MODULUS: i64 = ((1 as i64) << 48) - 1;
-const JAVA_ADDEND: i64 = 0xB;
+pub const JAVA_MULTIPLIER: i64 = 0x5DEECE66D;
+pub const JAVA_MODULUS: i64 = ((1 as i64) << 48) - 1;
+pub const JAVA_ADDEND: i64 = 0xB;
 
 lazy_static! {
     ///Equivalent of the default Java Random LCG
